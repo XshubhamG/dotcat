@@ -1,0 +1,73 @@
+<div class="dropdown">
+  <div
+    tabindex="0"
+    role="button"
+    class="btn btn-primary text-base flex items-center"
+  >
+    Theme
+
+    <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+      ></path>
+    </svg>
+  </div>
+  <ul
+    tabindex="0"
+    class="dropdown-content bg-base-300 rounded-box z-1 w-52 p-2 shadow-2xl"
+  >
+    <li>
+      <input
+        type="radio"
+        name="theme-dropdown"
+        class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+        aria-label="Latte"
+        data-set-theme="latte"
+      />
+    </li>
+    <li>
+      <input
+        type="radio"
+        name="theme-dropdown"
+        class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+        aria-label="Frappe"
+        data-set-theme="frappe"
+      />
+    </li>
+    <li>
+      <input
+        type="radio"
+        name="theme-dropdown"
+        class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+        aria-label="Macchiato"
+        data-set-theme="macchiato"
+      />
+    </li>
+    <li>
+      <input
+        type="radio"
+        name="theme-dropdown"
+        class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+        aria-label="Mocha"
+        data-set-theme="mocha"
+      />
+    </li>
+  </ul>
+</div>
+
+<script is:inline>
+  if (localStorage.getItem("theme") === null) {
+    document.documentElement.setAttribute("data-theme", "mocha");
+  } else {
+    document.documentElement.setAttribute(
+      "data-theme",
+      localStorage.getItem("theme")
+    );
+  }
+</script>
+<script>
+  import { themeChange } from "theme-change";
+  themeChange();
+</script>

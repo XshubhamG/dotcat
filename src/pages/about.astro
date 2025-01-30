@@ -1,0 +1,33 @@
+---
+import Image from "astro/components/Image.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+
+import logo from "../assets/logo.png";
+---
+
+<MainLayout title="About">
+  <main class="py-12">
+    <div class="w-1/2 mx-auto flex flex-col items-center space-y-4 gap-4">
+      <Image src={logo} alt="catppuccin logo" width={250} height={100} />
+      <h2 class="text-2xl">
+        Hey, I'm <span
+          class="font-bold font-serif text-primary underline underline-offset-8"
+          >Shubham Giri!</span
+        >
+      </h2>
+      <p class="text-center text-lg">
+        Web/Software developer with a deep interest in building efficient,
+        scalable solutions. With expertise in various programming languages and
+        tools, I specialize in writing clean, maintainable code, and
+        continuously strive to learn new technologies. My GitHub <a
+          href="https://github.com/xshubhamg"
+          class="font-serif underline hover:font-bold hover:text-primary text-secondary"
+          >@xshubhamg</a
+        > showcases my open-source contributions and projects. I enjoy solving complex
+        problems, whether it's through development or optimizing workflows. In my
+        free time, I love to explore and learn new things about my environment and
+        the tools i use.
+      </p>
+    </div>
+  </main>
+</MainLayout>

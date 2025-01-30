@@ -1,0 +1,20 @@
+---
+import Logo from "./ui/Logo.astro";
+import NavlinkContainer from "./ui/NavlinkContainer.astro";
+import Social from "./ui/Social.jsx";
+import ThemeController from "./ui/ThemeController.astro";
+---
+
+<header
+  class="bg-base-200/10 backdrop-blur-md shadow-lg border-b-base/5 py-6 sticky top-0"
+>
+  <div class="container mx-auto px-4 flex justify-between items-center">
+    <Logo />
+
+    <div class="flex items-center gap-4">
+      <NavlinkContainer />
+      <Social />
+      <ThemeController />
+    </div>
+  </div>
+</header>
