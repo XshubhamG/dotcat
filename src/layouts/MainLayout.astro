@@ -1,6 +1,7 @@
 ---
 import MainFooter from "../components/MainFooter.astro";
 import MainHeader from "../components/MainHeader.astro";
+import MouseMoveEffect from "../components/ui/MouseMoveEffect";
 import "../styles/global.css";
 
 const { title } = Astro.props;
@@ -22,6 +23,7 @@ const { title } = Astro.props;
     <title>dotcat ~/{title}</title>
   </head>
   <body>
+    <MouseMoveEffect client:load />
     <div class="font-sans">
       <MainHeader />
       <slot />
