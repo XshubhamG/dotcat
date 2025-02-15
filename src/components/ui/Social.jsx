@@ -25,7 +25,12 @@ const Social = () => {
           key={index}
           className="grid items-center justify-center w-10 h-10 rounded-full"
         >
-          <a href={social.url} target="_blank" rel="noreferrer">
+          <a
+            href={social.url}
+            aria-labelledby="social link"
+            target="_blank"
+            rel="noreferrer"
+          >
             {social.icon}
           </a>
         </li>

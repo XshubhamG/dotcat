@@ -1,1 +1,38 @@
-<main></main>
+---
+import Image from "astro/components/Image.astro";
+import fastfetch from "../assets/preview/preview-fastfetch.png";
+---
+
+<main
+  class={`py-10 text-black bg-gradient-to-r from-blue from-20%  via-mauve via-30% to-red`}
+>
+  <div class="container mx-auto flex flex-col justify-center py-8 gap-8">
+    <section
+      class="text-center flex flex-col gap-6 justify-center items-center"
+    >
+      <h1 class="text-4xl font-bold font-serif">Welocome To dotcat</h1>
+      <p class="text-lg">
+        Yet Another <a
+          class="text-sm font-serif font-bold hover:underline"
+          href="https://archlinux.org">Arch</a
+        > & <a
+          class="text-sm font-serif font-bold hover:underline"
+          href="https://hyprland.org">hyprland</a
+        >
+        rise based on <a
+          class="text-sm font-serif font-bold hover:underline"
+          href="https://catppuccin.com">catppuccin mocha</a
+        > colorscheme
+      </p>
+      <button class="btn btn-lg btn-primary hover:shadow-lg border border-black"
+        >Get Started</button
+      >
+    </section>
+    <Image
+      src={fastfetch}
+      loading="eager"
+      class="w-4/5 mx-auto border-2 shadow-md shadow-black rounded-md"
+      alt="fastfetch"
+    />
+  </div>
+</main>
