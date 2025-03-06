@@ -20,5 +20,10 @@
     "react-icons": "^5.4.0",
     "tailwindcss": "^4.0.0",
     "theme-change": "^2.5.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.11"
   }
 }
