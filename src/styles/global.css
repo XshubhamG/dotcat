@@ -123,7 +123,7 @@
   --color-neutral-content: #303446;
   --color-info: #85c1dc;
   --color-info-content: oklch(29% 0.066 243.157);
-  --color-success: #a6d189; // ☝️ This script prevent the FART effect.;
+  --color-success: #a6d189;
   --color-success-content: oklch(37% 0.077 168.94);
   --color-warning: #e5c890;
   --color-warning-content: oklch(41% 0.112 45.904);
